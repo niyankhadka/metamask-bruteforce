@@ -1,9 +1,5 @@
 # metamask-bruteforce
 
-Commands:
+Individual set of program has readme file. Please refer to those files.
 
-    Running:
-
-        CPP :
-            cppprobCombo.o to generate permutations to numcppProbCombo
-            ./a.out | tee >(split --additional-suffix=.log -d -b 10000000 - numcppProbCombo.0)
+Thank you

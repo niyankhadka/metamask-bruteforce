@@ -20,23 +20,23 @@ len7Lists = []
 len8Lists = []
 
 #opening wordlists file
-with open("G:/metamask-bruteforce/wordlists/bip-0039-english.txt", "r") as wordlist:
+with open("G:/metamask-bruteforce/wordlists/Raw/bip-0039-english.txt", "r") as wordlist:
     for line in wordlist:
         if len(line.strip()) == 3:
             len3Lists.append(line.strip())
-            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/len3Lists.txt", list = len3Lists )
+            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/Raw/len3Lists.txt", list = len3Lists )
         elif len(line.strip()) == 4:
             len4Lists.append(line.strip())
-            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/len4Lists.txt", list = len4Lists )
+            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/Raw/len4Lists.txt", list = len4Lists )
         elif len(line.strip()) == 5:
             len5Lists.append(line.strip())
-            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/len5Lists.txt", list = len5Lists )
+            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/Raw/len5Lists.txt", list = len5Lists )
         elif len(line.strip()) == 6:
             len6Lists.append(line.strip())
-            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/len6Lists.txt", list = len6Lists )
+            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/Raw/len6Lists.txt", list = len6Lists )
         elif len(line.strip()) == 7:
             len7Lists.append(line.strip())
-            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/len7Lists.txt", list = len7Lists )
+            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/Raw/len7Lists.txt", list = len7Lists )
         elif len(line.strip()) == 8:
             len8Lists.append(line.strip())
-            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/len8Lists.txt", list = len8Lists )
+            mf.fileWrite( path="G:/metamask-bruteforce/wordlists/Raw/len8Lists.txt", list = len8Lists )
