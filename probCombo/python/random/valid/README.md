@@ -1,0 +1,1 @@
+This contains all the valid combinations from generated one. All files are moved to this folder from check directory.

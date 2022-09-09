@@ -1,0 +1,1 @@
+All files in this directory are checked whether the combination is valid or invalid. Valid combinations are moved to valid directory where as others are deleted. 

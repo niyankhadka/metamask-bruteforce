@@ -20,10 +20,10 @@ validPath = "valid"
 # creating the date object of today's date
 todays_date = date.today()
 
-EXTENSION_PATH = "C:\\Users\\niyankhadka\\AppData\\Local\\BraveSoftware\\Brave-Browser\\User Data\\Default\\Extensions\\nkbihfbeogaeaoehlefnkodbefgpgknn\\10.18.3_0.crx"
-BINARY_LOCATION = "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-CHROME_DRIVER = "G:\\metamask-bruteforce\\probCombo\\python\\random\\resources\\chromedriver.exe"
-mm_extension_id = "nkbihfbeogaeaoehlefnkodbefgpgknn" #enter your metamask extension id here
+EXTENSION_PATH = ""
+BINARY_LOCATION = ""
+CHROME_DRIVER = ""
+mm_extension_id = "" #enter your metamask extension id here
 
 option = webdriver.ChromeOptions()
 option.add_extension(EXTENSION_PATH)
