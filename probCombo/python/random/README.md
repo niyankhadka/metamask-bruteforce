@@ -64,13 +64,22 @@ This file is to check valid combinations to find jackpot combinations. Make chan
 
 Make sure to install two library to run this file.
 
-selenium 
+selenium:
     pip install selenium
 
-pyperclip 
+pyperclip:
     pip install pyperclip
 
 Use below command to run the file:
     python v.py
 
-Note: Before running this file, make sure check folder has at least one file and it will run untill and unless you stop it.
+Note: Before running this file, make sure check folder has at least one file and it will run untill and unless you stop it. Also, there is one problem with this method, you cannot run two files c.py and v.py at one time on same machine. As copy to clipboard might bring issue on both case, so this one is defect of this method. If you want to use two files on separate machine, then it's fine. 
+
+Alternative:
+In above issue, skip Step 2 and 3 and proceed to read below message.
+I have joined c.py and v.py on single file called as cv.py where you can run this on same machine. It is combination of two files where you can easily run without any issue. 
+
+cv.py:
+As per above inforamtion of file, edit the file as per requirement.
+
+Thankyou.

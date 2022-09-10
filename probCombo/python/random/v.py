@@ -31,7 +31,6 @@ option.binary_location = BINARY_LOCATION
 chromedriver = CHROME_DRIVER
 s = Service(chromedriver)
 driver = webdriver.Chrome(service=s, options=option)
-driver.maximize_window()
 
 #switch tabs
 driver.switch_to.window(driver.window_handles[0])
@@ -44,11 +43,11 @@ file_check = True
 #declaring empty lists
 totalLists = []
 if len(os.listdir(validPath)) == 0:
-    print("No files found in the directory - Valid.")
+    print("No valid .txt file found in the directory - Valid.")
 else:
     while file_check:
         if len(os.listdir(validPath)) == 0:
-            print("No files found in the directory - Valid.")
+            print("No valid .txt file found in the directory - Valid.")
             time.sleep(10)
             file_check = True
         else:
@@ -144,6 +143,10 @@ else:
                         print("Closed File:", x)
                         os.remove(r"{}\{}".format(validPath, x))
                         looper = False
+                else:
+                    print("No valid .txt file found in the directory - Valid.")
+                    time.sleep(10)
+                    file_check = True
 
 driver.quit()
 exit()
