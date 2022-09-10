@@ -44,11 +44,11 @@ file_check = True
 #declaring empty lists
 totalLists = []
 if len(os.listdir(checkPath)) == 0:
-    print("No files found in the directory - Check.")
+    print("No check .txt file found in the directory - Check.")
 else:
     while file_check:
         if len(os.listdir(checkPath)) == 0:
-            print("No files found in the directory - Check.")
+            print("No check .txt file found in the directory - Check.")
             time.sleep(10)
             file_check = True
         else:
@@ -87,6 +87,10 @@ else:
                         print("Closed File:", x)
                         os.remove(r"{}\{}".format(checkPath, x))
                         looper = False
+                else:
+                    print("No check .txt file found in the directory - Check.")
+                    time.sleep(10)
+                    file_check = True
 
 driver.quit()
 exit()
